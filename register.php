@@ -1,23 +1,49 @@
 <!-- register.php -->
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <title>Register</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Kicks Corner Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
-    <h2>Register</h2>
-    <form action="auth/handle_register.php" method="POST">
-        <label>Username:</label><br />
-        <input type="text" name="username" required /><br />
+    <div class="container">
+        <?php include 'components/navbar.php'; ?>
+        <main>
+            <h1>Create an Account</h1>
+            <form action="auth/handle_register.php" method="POST">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required />
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required />
+                </div>
+                <button type="submit" class="login-btn">Register</button>
+            </form>
 
-        <label>Email:</label><br />
-        <input type="email" name="email" required /><br />
-
-        <label>Password:</label><br />
-        <input type="password" name="password" required /><br /><br />
-
-        <button type="submit">Register</button>
-    </form>
+            <div class="divider">Or continue with</div>
+            <div class="social-buttons">
+                <button class="social-btn">
+                    <img alt="Google logo" class="w-4 h-4" height="16" src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000" width="16" />
+                    Continue with Google
+                </button>
+                <button class="social-btn">
+                    <img alt="Facebook logo" class="w-4 h-4" height="16" src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000" width="16" />
+                    Continue with Facebook
+                </button>
+            </div>
+            <a class="signup-link" href="login.php">have an account? Sign in</a>
+        </main>
+    </div>
 </body>
+
 </html>
