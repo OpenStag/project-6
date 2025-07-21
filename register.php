@@ -43,7 +43,7 @@
                     Continue with Facebook
                 </button>
             </div>
-            <a class="signup-link" href="login.php">have an account? Sign in</a>
+            <a class="signup-link" href="login.php">Already have an account? Sign in</a>
         </main>
     </div>
 </body>
