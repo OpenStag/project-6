@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
+<script src="assets/js/navbar.js"></script>
+
 <body>
     <div class="container">
         <?php include 'components/navbar.php'; ?>
