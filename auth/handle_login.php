@@ -7,7 +7,9 @@ $usernameOrEmail = trim($_POST['username_or_email'] ?? '');
 $password = $_POST['password'] ?? '';
 
 if (!$usernameOrEmail || !$password) {
-    die("Please fill all fields.");
+    $_SESSION['error'] = "Please fill all fields.";
+    header("Location: ../login.php");
+    exit;
 }
 
 // Fetch user by username or email
@@ -16,18 +18,21 @@ $stmt->execute([$usernameOrEmail, $usernameOrEmail]);
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if (!$user) {
-    die("Invalid Username or Email");
+    $_SESSION['error'] = "Invalid username or email.";
+    header("Location: ../login.php");
+    exit;
 }
 
-// password
 if (!password_verify($password, $user['password'])) {
-    die("Invalid password.");
+    $_SESSION['error'] = "Invalid password.";
+    header("Location: ../login.php");
+    exit;
 }
 
-// Set Session
+// Set session
 $_SESSION['user_id'] = $user['id'];
 $_SESSION['username'] = $user['username'];
 
-// Redirect to the home
+// Redirect to home
 header("Location: ../home.php");
 exit;

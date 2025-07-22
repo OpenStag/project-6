@@ -17,9 +17,17 @@
         <main>
             <h1>Welcome Back</h1>
 
+            <?php
+            if (isset($_SESSION['error'])) {
+                echo "<p style='color: red;'>{$_SESSION['error']}</p>";
+                unset($_SESSION['error']);
+            }
+            ?>
+
             <?php if (isset($_GET['register']) && $_GET['register'] == 'success'): ?>
                 <p class="success-message">Registration successful. Please login.</p>
             <?php endif; ?>
+
 
             <form action="auth/handle_login.php" method="POST">
                 <div>
