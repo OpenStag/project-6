@@ -1,3 +1,11 @@
+ :root {
+            --primary: #000000;
+            --secondary: #ff6b6b;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+        }
+
 body{
   background: linear-gradient(to right, white, #7ce6ee, #6ba9ff);
   overflow-x: hidden;
