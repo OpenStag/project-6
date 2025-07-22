@@ -1,0 +1,86 @@
+body{
+  background: linear-gradient(to right, white, #7ce6ee, #6ba9ff);
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.hero img {
+  filter: blur(2px);
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.filters select {
+  text-align: center;
+  font-size: 18px;
+  width: 130px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filters select:hover {
+  background-color: #a6ebf3;
+  font-weight: bold;
+  border:1px solid black;
+}
+
+.shoe-gallery1, .shoe-gallery2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  padding: 20px;
+}
+
+.shoe-card {
+  width: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shoe-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+}
+
+.shoe-card img {
+  width: 280px;
+  height: 210px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+p {
+  font-weight: bold;
+  color: #005C91;
+  font-size: 18px;
+  text-align: center;
+}
