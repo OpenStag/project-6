@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+  background: linear-gradient(90deg, rgb(244, 250, 250) 0%, rgb(108, 193, 200) 50%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  
+}
+
+.navbar{
+    width: 1500px;
+    height: 70px;
+    margin: auto;
+    position: relative;
+   
+}
+
+.icon{
+    width:200px;
+    height: 70px;
+    float: left;
+}
+
+.logo{
+    color: rgb(17, 82, 199);
+    font-size: 28px;
+    font-family:'Times New Roman';
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 900px;
+    height: 70px;
+    float: left;
+    
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    padding-top: 8px;
+    
+}
+
+ul li{
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(50, 109, 193);
+    font-family: arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: rgb(4, 50, 136);
+    
+}
+
+body, html {
+    overflow-x: hidden; /* hides horizontal scroll */
+    overflow-y: hidden; /* hides vertical scroll */
+}
+
+.cart{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.cart-icon {
+    width: 28px;
+    height: 28px;
+    opacity: 0.7;         /* semi-transparent */
+    transition: opacity 0.3s;
+}
+
+.cart-icon:hover {
+    opacity: 1;           /* fully visible on hover */
+}
+
+
+
+
