@@ -7,10 +7,10 @@ $username = $isLoggedIn ? $_SESSION['username'] : null;
 <header>
     <div class="logo-font logo">Kicks Corner</div>
     <nav>
-        <a href="#">New Arrivals</a>
-        <a href="#">Men</a>
-        <a href="#">Women</a>
-        <a href="#">Sports</a>
+        <a href="">New Arrivals</a>
+        <a href="./MenShoes/Men.html">Men</a>
+        <a href="./WomenShoes/Women.html">Women</a>
+        <a href="./SportsShoes/Sports.html">Sports</a>
         <a href="#">About Us</a>
     </nav>
 
