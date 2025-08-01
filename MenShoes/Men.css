@@ -1,0 +1,273 @@
+ :root {
+            --primary: #000000;
+            --secondary: #ff6b6b;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+        }
+
+body{
+  background: linear-gradient(to right, white, #7ce6ee, #6ba9ff);
+  overflow-x: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ .main-header {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px 40px 0 40px;
+    z-index: 10;
+    background: transparent;
+  }
+  
+  .logo {
+    font-family: 'Irish Grover', cursive;
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--primary);
+    letter-spacing: 1px;
+    user-select: none;
+    outline: none;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-nav .nav-link {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--text);
+    text-decoration: none;
+    position: relative;
+    padding: 0 4px;
+    transition: color var(--transition);
+  }
+  
+  .main-nav .nav-link.active,
+  .main-nav .nav-link:focus {
+    color: var(--active-link);
+  }
+  
+  .main-nav .nav-link.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: var(--active-link);
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+  }
+  
+  .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  
+  .icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+    margin: 0 2px;
+    display: flex;
+    align-items: center;
+    transition: filter var(--transition);
+  }
+  
+  .icon-btn:focus {
+    outline: 2px solid var(--active-link);
+    outline-offset: 2px;
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: linear-gradient(0deg, rgba(0, 89, 179, 0.74), #d9d9d9);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  
+  .avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    object-fit: cover;
+    background: #eee;
+  }
+  
+  .dark-toggle svg {
+    filter: grayscale(0.7);
+  }
+
+.hero {
+  position: relative;
+  text-align: center;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.hero img {
+  width: 100%;
+  filter: blur(3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+.hero-text {
+  font-family: kreon;
+  position: absolute;
+  bottom: 350px;
+  left: 270px;
+  font-size: 65px;
+  font-weight: bold;
+  color: white;
+}
+
+#btn{
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 370px;
+  top: 250px;
+  background-color: #43CAD8;
+  border: none;
+  border-radius: 10px;
+  font-family: kreon;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#btn:hover {
+  cursor: pointer;
+  background-color: #a6ebf3;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.filters select {
+  text-align: center;
+  font-size: 16px;
+  width: 130px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filters select:hover {
+  background-color: #a6ebf3;
+  font-weight: bold;
+  border:1px solid black;
+}
+
+.shoe-gallery1, .shoe-gallery2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  padding: 20px;
+}
+
+.shoe-card {
+  width: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shoe-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+}
+
+.shoe-card img {
+  width: 280px;
+  height: 210px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+p {
+  font-family: Kantumruy;
+  font-weight: bold;
+  color: #005C91;
+  font-size: 19px;
+  text-align: center;
+}
+
+ footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .social-icons {
+            margin: 2rem 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: var(--secondary);
+        }
+        
+        .copyright {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
