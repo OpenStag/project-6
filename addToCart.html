@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addToCart</title>
+    <link rel="stylesheet" href="./addToCart/style.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="cart">
+                <a href="#">
+                    <img src="images/cart.png" alt="Cart Icon" class="cart-icon">
+                </a>
+            </div>
+            <div class="heart">
+                <a href="#">
+                    <img src="images/heart.png" alt="Heart Icon" class="heart-icon">
+                </a>
+
+            </div>
+            <div class="profile">
+                <a href="#">
+                    <img src="images/boy.png" alt="User Icon" class="profile-icon">
+                </a>
+            </div>
+            <div class="icon">
+                <h2 class="logo">Kicks Corner</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+
+
+
+
+        </div>
+
+        <main>
+            <div class="payment-method">
+                <h1>Payment Method</h1>
+            </div>
+
+
+            <div class="payment-method-button">
+                <span>Credit Card</span>
+                <input type="radio" class="radio-button" name="payment" value="credit-card">
+            </div>
+
+            <div class="payment-method-button">
+                <span>Digital Wallet</span>
+                <input type="radio" class="radio-button" name="payment" value="digital-wallet">
+            </div>
+            <div class="payment-method-button">
+                <span>Gift Card</span>
+                <input type="radio" class="radio-button" name="payment" value="gift-card">
+            </div>
+
+            <form id="payment-form">
+
+                <div class="form-group">
+                    <br><label for="card-number">Card Number</label><br>
+                    <input type="text" id="card-number" placeholder="Enter card number" required>
+
+
+                </div>
+                <div class="form-row">
+                    <div>
+                        <label for="expiry-date">Expiry Date</label><br>
+                        <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label><br>
+                        <input type="text" id="cvv" placeholder="Enter CVV" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="card-name">Name of the Card</label><br>
+                    <input type="text" id="card-name" placeholder="Enter Name" required>
+                </div>
+
+
+                <br><button type="submit" class="submit-button">Save Payment Method</button>
+
+
+
+            </form>
+        </main>
+</body>
+
+</html>

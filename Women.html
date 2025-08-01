@@ -3,23 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Women.css">
+    <link rel="stylesheet" href="./WomenShoes/Women.css">
     <title>Document</title>
 </head>
 <body>
-  <header>
-        <div class="logo">Kicks Corner</div>
-        <nav>
-            <ul>
-                <li><a href="#">New Arrivals</a></li>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#" class="cta-button">Start Now</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="main-header">
+    <div class="logo" tabindex="0">Kicks Corner</div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="./arival.php" class="nav-link">New Arrivals</a></li>
+        <li><a href="./Men.html" class="nav-link">Men</a></li>
+        <li><a href="./Women.html" class="nav-link active" aria-current="page">Women</a></li>
+        <li><a href="./Sports.html" class="nav-link">Sports</a></li>
+        <li><a href="./aboutUs.html" class="nav-link ">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons">
+      <button class="icon-btn" aria-label="Cart">
+        <span class="cart-badge" id="cart-badge">0</span>
+        <!-- Cart SVG -->
+        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" aria-hidden="true"><path d="M10 29a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm13 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM7 7h22l-2.5 12.5a2 2 0 0 1-2 1.5H11.5a2 2 0 0 1-2-1.5L7 7zm0 0L5 3H2" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Favorites">
+        <!-- Heart SVG -->
+        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" aria-hidden="true"><path d="M16.5 29s-10-6.5-10-13.5A6.5 6.5 0 0 1 16.5 9a6.5 6.5 0 0 1 10 6.5C26.5 22.5 16.5 29 16.5 29z" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Profile">
+        <img src="profile.png" alt="User avatar" class="avatar">
+      </button>
+      <button class="icon-btn dark-toggle" id="dark-toggle" aria-label="Toggle dark mode">
+        <!-- Moon SVG -->
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M14 2a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1zm0 22a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1zm10-10a1 1 0 0 1 1 1h2a1 1 0 1 1 0-2h-2a1 1 0 0 1-1 1zm-20 0a1 1 0 0 1 1 1H3a1 1 0 1 1 0-2h2a1 1 0 0 1 1 1zm14.95-7.07a1 1 0 0 1 1.41 0l1.42 1.42a1 1 0 1 1-1.41 1.41l-1.42-1.42a1 1 0 0 1 0-1.41zm-11.31 0a1 1 0 0 1 0 1.41L4.22 7.76a1 1 0 1 1-1.41-1.41l1.42-1.42a1 1 0 0 1 1.41 0zm11.31 14.14a1 1 0 0 1 0 1.41l-1.42 1.42a1 1 0 1 1-1.41-1.41l1.42-1.42a1 1 0 0 1 1.41 0zm-11.31 0a1 1 0 0 1 1.41 0l1.42 1.42a1 1 0 1 1-1.41 1.41l-1.42-1.42a1 1 0 0 1 0-1.41z" fill="#222"/></svg>
+      </button>
+    </div>
+  </header>
     <section class="hero">
     <img src="WomenShoesImg/women-page1.jpg" alt="Running Shoes">
     <div class="hero-text">Women's Choice</div>
